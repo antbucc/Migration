@@ -1,0 +1,42 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<profiles>
+		<profile>
+			<id>itemis</id>
+			<properties>
+				<artifacts.base.url>https://projects.itemis.de/nexus/content/</artifacts.base.url>
+			</properties>
+			<repositories>
+				<repository>
+					<id>central</id>
+					<url>https://repo.maven.apache.org/maven2</url>
+				</repository>
+				<repository>
+					<id>itemis-deutschland-public</id>
+					<url>${artifacts.base.url}groups/OS/</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>central</id>
+					<url>https://repo.maven.apache.org/maven2</url>
+				</pluginRepository>
+				<pluginRepository>
+					<id>itemis-deutschland-public</id>
+					<url>${artifacts.base.url}groups/OS/</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>itemis</activeProfile>
+	</activeProfiles>
+	<!-- -->
+</settings>

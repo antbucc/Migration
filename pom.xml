@@ -1,0 +1,120 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.lsitsolutions.research</groupId>
+	<artifactId>devops-2019-migration-parent</artifactId>
+	<version>${revision}${sha1}${changelist}</version>
+	<packaging>pom</packaging>
+	<name>Research Project</name>
+	<description>Research Project with Antonio Bucchiarone on migration to micro services</description>
+
+	<contributors>
+		<contributor>
+			<name>Antonio Bucchiaroe</name>
+			<email>bucchiarone@fbk.eu</email>
+			<organization>Fondazione Bruno Kessler, Trento, Italy</organization>
+			<timezone>+1</timezone>
+		</contributor>
+		<contributor>
+			<name>Kemal Soysal</name>
+			<email>Kemal.Soysal@ls-it-solutions.de</email>
+			<organization>LS IT-Solutions GmbH, Berlin, Germany</organization>
+			<timezone>+1</timezone>
+		</contributor>
+	</contributors>
+
+	<scm>
+		<connection>scm:git:https://github.com/antbucc/Migration.git</connection>
+		<developerConnection>scm:git:https://github.com/antbucc/Migration.git</developerConnection>
+	</scm>
+
+	<properties>
+		<revision>0.0.1</revision>
+		<sha1></sha1>
+		<changelist>-SNAPSHOT</changelist>
+		<mps.version>2019.1.5</mps.version>
+		<maven.version>3.6</maven.version>
+		<directory.version>0.3.1</directory.version>
+		<flatten.version>1.1.0</flatten.version>
+		<deploy.version>2.8.2</deploy.version>
+		<dependency-plugin.version>3.1.1</dependency-plugin.version>
+
+		<mps.home>${root.dir}/artifacts/MPS-${mps.version}</mps.home>
+
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.commonjava.maven.plugins</groupId>
+				<artifactId>directory-maven-plugin</artifactId>
+				<version>${directory.version}</version>
+				<configuration>
+					<property>root.dir</property>
+					<project>
+						<groupId>de.lsitsolutions.research</groupId>
+						<artifactId>devops-2019-migration-parent</artifactId>
+					</project>
+				</configuration>
+				<executions>
+					<execution>
+						<id>default-cli</id>
+						<goals>
+							<goal>directory-of</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>pre-clean-${project.artifactId}</id>
+						<phase>pre-clean</phase>
+						<goals>
+							<goal>directory-of</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>validate-${project.artifactId}</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>directory-of</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>flatten-maven-plugin</artifactId>
+				<version>${flatten.version}</version>
+				<configuration>
+					<updatePomFile>true</updatePomFile>
+					<flattenedPomFilename>.flattened-${project.artifactId}</flattenedPomFilename>
+					<pomElements>
+						<name />
+						<description />
+						<dependencies />
+					</pomElements>
+				</configuration>
+				<executions>
+					<!--enable flattening -->
+					<execution>
+						<id>flatten-${project.artifactId}</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>flatten</goal>
+						</goals>
+					</execution>
+					<!--ensure proper cleanup -->
+					<execution>
+						<id>flatten.clean-${project.artifactId}</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<modules>
+		<module>install-mps</module>
+	</modules>
+</project>
