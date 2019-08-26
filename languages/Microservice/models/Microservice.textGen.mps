@@ -148,7 +148,7 @@
       <node concept="3clFbS" id="2mSLbBVJQSo" role="2VODD2">
         <node concept="3clFbF" id="2mSLbBVJR67" role="3cqZAp">
           <node concept="Xl_RD" id="2mSLbBVJR66" role="3clFbG">
-            <property role="Xl_RC" value=".ol" />
+            <property role="Xl_RC" value="ol" />
           </node>
         </node>
       </node>
@@ -160,7 +160,7 @@
       <node concept="3clFbS" id="1vRkFOS1LNq" role="2VODD2">
         <node concept="3clFbF" id="1vRkFOS1MVd" role="3cqZAp">
           <node concept="Xl_RD" id="1vRkFOS1MVc" role="3clFbG">
-            <property role="Xl_RC" value=".ol" />
+            <property role="Xl_RC" value="ol" />
           </node>
         </node>
       </node>
