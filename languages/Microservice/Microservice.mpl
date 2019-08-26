@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="Microservice" uuid="5c89a840-4b0c-458c-8389-f58f5a50822b" languageVersion="0" moduleVersion="0">
+<language namespace="Microservice" uuid="077de623-ba05-47ed-a860-a4445e8de4c1" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="Microservice#01" uuid="e8429bcd-0a75-4e98-b1d2-01f4f3a9e54b">
+    <generator alias="main" namespace="Microservice#01" uuid="a4fa3ed3-7086-4daf-8d8c-0205c71b0688">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -37,8 +37,8 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="5c89a840-4b0c-458c-8389-f58f5a50822b(Microservice)" version="0" />
-        <module reference="e8429bcd-0a75-4e98-b1d2-01f4f3a9e54b(Microservice#01)" version="0" />
+        <module reference="077de623-ba05-47ed-a860-a4445e8de4c1(Microservice)" version="0" />
+        <module reference="a4fa3ed3-7086-4daf-8d8c-0205c71b0688(Microservice#01)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
@@ -74,7 +74,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="5c89a840-4b0c-458c-8389-f58f5a50822b(Microservice)" version="0" />
+    <module reference="077de623-ba05-47ed-a860-a4445e8de4c1(Microservice)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>

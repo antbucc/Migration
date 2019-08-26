@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b938d937-6129-440b-b954-75f90e8308be(Microservice.structure)">
+<model ref="r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
@@ -12,7 +12,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -21,6 +20,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -42,165 +42,179 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="3EpFE4jllmJ">
-    <property role="EcuMT" value="4222598132473877935" />
-    <property role="TrG5h" value="Microservice" />
+  <node concept="1TIwiD" id="1vRkFORWz7$">
+    <property role="EcuMT" value="1726939954760790500" />
+    <property role="TrG5h" value="microservice" />
+    <property role="19KtqR" value="true" />
     <property role="34LRSv" value="microservice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jllp6" role="PzmwI">
+    <node concept="PrWs8" id="1vRkFORWzjj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="3EpFE4jllwa" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473878538" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="version" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3EpFE4jlp4P" resolve="Version" />
+    <node concept="1TJgyi" id="1vRkFORX9c$" role="1TKVEl">
+      <property role="IQ2nx" value="1726939954760946468" />
+      <property role="TrG5h" value="execution" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="3EpFE4jlp4U" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473893178" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="endpoints" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3EpFE4jlof5" resolve="EndPoint" />
-    </node>
-    <node concept="1TJgyj" id="3EpFE4jlp4Y" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473893182" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="executionEnvironment" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3EpFE4jlngV" resolve="ExecutionEnvironment" />
-    </node>
-    <node concept="1TJgyj" id="3EpFE4jllzH" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473878765" />
+    <node concept="1TJgyj" id="1vRkFORZIBM" role="1TKVEi">
+      <property role="IQ2ns" value="1726939954761624050" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3EpFE4jllCs" resolve="MicroserviceType" />
+      <property role="20kJfa" value="inputPort" />
+      <ref role="20lvS9" node="1vRkFORWzCs" resolve="InputPort" />
+    </node>
+    <node concept="1TJgyj" id="1vRkFORZJ2x" role="1TKVEi">
+      <property role="IQ2ns" value="1726939954761625761" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="outputPort" />
+      <ref role="20lvS9" node="1vRkFORW$e0" resolve="OutputPort" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EpFE4jllCs">
-    <property role="EcuMT" value="4222598132473879068" />
-    <property role="TrG5h" value="MicroserviceType" />
-    <property role="34LRSv" value="microserviceType" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jllEN" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3EpFE4jlp4S" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473893176" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="versions" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3EpFE4jlp4P" resolve="Version" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3EpFE4jllST">
-    <property role="EcuMT" value="4222598132473880121" />
-    <property role="TrG5h" value="Configuration" />
-    <property role="34LRSv" value="configuration" />
-    <property role="R4oN_" value="specific state of a microservice architecture in terms of instances of microservices" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jllVg" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3EpFE4jlm8d" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473881101" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="microservices" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3EpFE4jllmJ" resolve="Microservice" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3EpFE4jlngV">
-    <property role="EcuMT" value="4222598132473885755" />
-    <property role="TrG5h" value="ExecutionEnvironment" />
-    <property role="34LRSv" value="executionEnvironment" />
-    <property role="R4oN_" value="virtual machine or a container where microservices are deployed" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jlnji" role="PzmwI">
+  <node concept="1TIwiD" id="1vRkFORWzCs">
+    <property role="EcuMT" value="1726939954760792604" />
+    <property role="TrG5h" value="InputPort" />
+    <property role="34LRSv" value="inputPort" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="1vRkFORWD4m" resolve="Port" />
+    <node concept="PrWs8" id="1vRkFORW$4_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EpFE4jlof5">
-    <property role="EcuMT" value="4222598132473889733" />
-    <property role="TrG5h" value="EndPoint" />
-    <property role="34LRSv" value="endpoint" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jlohs" role="PzmwI">
+  <node concept="1TIwiD" id="1vRkFORW$e0">
+    <property role="EcuMT" value="1726939954760795008" />
+    <property role="TrG5h" value="OutputPort" />
+    <property role="34LRSv" value="outputPort" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="1vRkFORWD4m" resolve="Port" />
+    <node concept="PrWs8" id="1vRkFORW$ur" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="3EpFE4jlo$h" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473891089" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="restOperations" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3EpFE4jloow" resolve="RESTOperation" />
+  </node>
+  <node concept="1TIwiD" id="1vRkFORWD4m">
+    <property role="EcuMT" value="1726939954760814870" />
+    <property role="TrG5h" value="Port" />
+    <property role="34LRSv" value="port" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1vRkFORWDbp" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="3EpFE4jlp53" role="1TKVEl">
-      <property role="IQ2nx" value="4222598132473893187" />
-      <property role="TrG5h" value="hostName" />
+    <node concept="1TJgyi" id="1vRkFORWDg8" role="1TKVEl">
+      <property role="IQ2nx" value="1726939954760815624" />
+      <property role="TrG5h" value="Protocol" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="3EpFE4jlp55" role="1TKVEl">
-      <property role="IQ2nx" value="4222598132473893189" />
-      <property role="TrG5h" value="port" />
+    <node concept="1TJgyi" id="1vRkFORWDyV" role="1TKVEl">
+      <property role="IQ2nx" value="1726939954760816827" />
+      <property role="TrG5h" value="Location" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="1vRkFORZ9z_" role="1TKVEi">
+      <property role="IQ2ns" value="1726939954761472229" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="Interfaces" />
+      <ref role="20lvS9" node="1vRkFORWDWP" resolve="Interface" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vRkFORWDWP">
+    <property role="EcuMT" value="1726939954760818485" />
+    <property role="TrG5h" value="Interface" />
+    <property role="34LRSv" value="interface" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1vRkFORWE6e" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1vRkFORY9SX" role="1TKVEi">
+      <property role="IQ2ns" value="1726939954761211453" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="throwMessage" />
+      <ref role="20lvS9" node="1vRkFORXSJq" resolve="ThrowMessage" />
+    </node>
+    <node concept="1TJgyj" id="1vRkFORYF$z" role="1TKVEi">
+      <property role="IQ2ns" value="1726939954761349411" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="requestResponseMessage" />
+      <ref role="20lvS9" node="1vRkFORXsBF" resolve="RequestResponse" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vRkFORXanL">
+    <property role="EcuMT" value="1726939954760951281" />
+    <property role="TrG5h" value="Parameter" />
+    <property role="34LRSv" value="parameter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1vRkFORXaCf" role="1TKVEl">
+      <property role="IQ2nx" value="1726939954760952335" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1vRkFORXaO0" role="1TKVEl">
+      <property role="IQ2nx" value="1726939954760953088" />
+      <property role="TrG5h" value="type" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EpFE4jloow">
-    <property role="EcuMT" value="4222598132473890336" />
-    <property role="TrG5h" value="RESTOperation" />
-    <property role="34LRSv" value="restOperation" />
+  <node concept="1TIwiD" id="1vRkFORXsBF">
+    <property role="EcuMT" value="1726939954761026027" />
+    <property role="TrG5h" value="RequestResponse" />
+    <property role="34LRSv" value="requestResponse" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jloqR" role="PzmwI">
+    <node concept="PrWs8" id="1vRkFORXsUs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1vRkFORXtvZ" role="1TKVEi">
+      <property role="IQ2ns" value="1726939954761029631" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="requestMessage" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1vRkFORXu3c" resolve="RequestMessage" />
+    </node>
+    <node concept="1TJgyj" id="1vRkFORXuOu" role="1TKVEi">
+      <property role="IQ2ns" value="1726939954761035038" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="responseMessage" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1vRkFORXv4X" resolve="ResponseMessage" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EpFE4jloM0">
-    <property role="EcuMT" value="4222598132473891968" />
-    <property role="TrG5h" value="Repository" />
-    <property role="34LRSv" value="repository" />
+  <node concept="1TIwiD" id="1vRkFORXu3c">
+    <property role="EcuMT" value="1726939954761031884" />
+    <property role="TrG5h" value="RequestMessage" />
+    <property role="34LRSv" value="requestMessage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jloOn" role="PzmwI">
+    <node concept="PrWs8" id="1vRkFORXueV" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="3EpFE4jloXL" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473892721" />
+    <node concept="1TJgyj" id="1vRkFORYrFD" role="1TKVEi">
+      <property role="IQ2ns" value="1726939954761284329" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="microservicesType" />
+      <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3EpFE4jllCs" resolve="MicroserviceType" />
+      <ref role="20lvS9" node="1vRkFORXanL" resolve="Parameter" />
+    </node>
+    <node concept="1TJgyi" id="1vRkFORZyDS" role="1TKVEl">
+      <property role="IQ2nx" value="1726939954761575032" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EpFE4jlp4P">
-    <property role="EcuMT" value="4222598132473893173" />
-    <property role="TrG5h" value="Version" />
+  <node concept="1TIwiD" id="1vRkFORXv4X">
+    <property role="EcuMT" value="1726939954761036093" />
+    <property role="TrG5h" value="ResponseMessage" />
+    <property role="34LRSv" value="responseMessage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jlp4Q" role="PzmwI">
+    <node concept="PrWs8" id="1vRkFORXvem" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EpFE4jlp58">
-    <property role="EcuMT" value="4222598132473893192" />
-    <property role="TrG5h" value="Dependency" />
+  <node concept="1TIwiD" id="1vRkFORXSJq">
+    <property role="EcuMT" value="1726939954761141210" />
+    <property role="TrG5h" value="ThrowMessage" />
+    <property role="34LRSv" value="throwMessage" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3EpFE4jlp59" role="PzmwI">
+    <node concept="PrWs8" id="1vRkFORXSZP" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3EpFE4jlp5b" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473893195" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="calling" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3EpFE4jllCs" resolve="MicroserviceType" />
-    </node>
-    <node concept="1TJgyj" id="3EpFE4jlp5d" role="1TKVEi">
-      <property role="IQ2ns" value="4222598132473893197" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="called" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3EpFE4jllCs" resolve="MicroserviceType" />
     </node>
   </node>
 </model>

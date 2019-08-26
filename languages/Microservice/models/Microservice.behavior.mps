@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c8b6ec83-f371-48c5-b995-55bcf56577f6(Microservice.behavior)">
+<model ref="r:f1daedcf-849e-472b-abff-2cb63c4005fb(Microservice.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
