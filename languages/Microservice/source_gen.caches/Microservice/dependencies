@@ -4,6 +4,7 @@
     <classNode dependClassName="Microservice.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="Microservice.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="Microservice.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="Microservice.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -13,6 +14,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>

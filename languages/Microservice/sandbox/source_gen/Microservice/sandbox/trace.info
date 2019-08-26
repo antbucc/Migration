@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2">
-  <root nodeRef="r:70440186-e749-40f3-aa41-04b0e68dabbc(Microservice.sandbox)/1726939954761621349">
-    <file name="map_microservice.java">
-      <unit id="1726939954761621349" at="6,0,8,0" name="Microservice.sandbox.map_microservice" />
-    </file>
-  </root>
-</debug-info>
+<debug-info version="2" />
 
