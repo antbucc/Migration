@@ -9,20 +9,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int InputPort = 0;
-  public static final int Interface = 1;
-  public static final int OutputPort = 2;
-  public static final int Parameter = 3;
-  public static final int Port = 4;
-  public static final int RequestMessage = 5;
-  public static final int RequestResponse = 6;
-  public static final int ResponseMessage = 7;
-  public static final int ServiceBehavior = 8;
-  public static final int ThrowMessage = 9;
-  public static final int microservice = 10;
+  public static final int BehaviorMethod = 0;
+  public static final int InputPort = 1;
+  public static final int Interface = 2;
+  public static final int OutputPort = 3;
+  public static final int Parameter = 4;
+  public static final int Port = 5;
+  public static final int RequestMessage = 6;
+  public static final int RequestResponse = 7;
+  public static final int ResponseMessage = 8;
+  public static final int ServiceBehavior = 9;
+  public static final int ThrowMessage = 10;
+  public static final int microservice = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x77de623ba0547edL, 0xa860a4445e8de4c1L);
+    builder.put(0x16a9394b31ecd22eL, BehaviorMethod);
     builder.put(0x17f752bd37f23a1cL, InputPort);
     builder.put(0x17f752bd37f29f35L, Interface);
     builder.put(0x17f752bd37f24380L, OutputPort);
