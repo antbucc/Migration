@@ -102,23 +102,18 @@
             <node concept="2OqwBi" id="1qDekGM0fcW" role="lb14g">
               <node concept="117lpO" id="1qDekGM0f4C" role="2Oq$k0" />
               <node concept="3TrEf2" id="1qDekGM0fqW" role="2OqNvi">
-                <ref role="3Tt5mk" to="hrda:1qDekGLZXuM" resolve="Copy" />
+                <ref role="3Tt5mk" to="hrda:1qDekGLZXuM" resolve="microservice" />
               </node>
             </node>
+          </node>
+          <node concept="la8eA" id="1qDekGM2APe" role="lcghm">
+            <property role="lacIc" value="main.ol" />
           </node>
           <node concept="l8MVK" id="1qDekGLZs77" role="lcghm" />
         </node>
         <node concept="lc7rE" id="1qDekGLZtJy" role="3cqZAp">
           <node concept="la8eA" id="1qDekGLZtQK" role="lcghm">
-            <property role="lacIc" value="CMD " />
-          </node>
-          <node concept="l9hG8" id="1qDekGLZu1p" role="lcghm">
-            <node concept="2OqwBi" id="1qDekGLZuaG" role="lb14g">
-              <node concept="117lpO" id="1qDekGLZu2o" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1qDekGLZur2" role="2OqNvi">
-                <ref role="3Tt5mk" to="hrda:1qDekGLZ9Fv" resolve="Command" />
-              </node>
-            </node>
+            <property role="lacIc" value="CMD jolie main.ol" />
           </node>
         </node>
       </node>

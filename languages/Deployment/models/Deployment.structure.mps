@@ -68,35 +68,15 @@
       <property role="TrG5h" value="Expose" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="1qDekGLZ9Fv" role="1TKVEi">
-      <property role="IQ2ns" value="1632899335022484191" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Command" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qDekGLZ9Yk" resolve="Command" />
+    <node concept="1TJgyi" id="1qDekGM2_cG" role="1TKVEl">
+      <property role="IQ2nx" value="1632899335023383340" />
+      <property role="TrG5h" value="Command" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="1qDekGLZXuM" role="1TKVEi">
       <property role="IQ2ns" value="1632899335022696370" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Copy" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hbv9:1vRkFORWz7$" resolve="microservice" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1qDekGLZ9Yk">
-    <property role="EcuMT" value="1632899335022485396" />
-    <property role="TrG5h" value="Command" />
-    <property role="34LRSv" value="command" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1qDekGLZacp" role="1TKVEl">
-      <property role="IQ2nx" value="1632899335022486297" />
-      <property role="TrG5h" value="language" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="1qDekGLZaEZ" role="1TKVEi">
-      <property role="IQ2ns" value="1632899335022488255" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="microserviceFile" />
+      <property role="20kJfa" value="microservice" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="hbv9:1vRkFORWz7$" resolve="microservice" />
     </node>

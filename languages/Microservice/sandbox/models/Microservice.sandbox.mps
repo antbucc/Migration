@@ -91,11 +91,11 @@
     <ref role="w3uIu" node="1vRkFORYqYe" resolve="calculate" />
   </node>
   <node concept="w1sQ8" id="1vRkFORZwFa">
-    <property role="TrG5h" value="OperationServiceInterface" />
-    <ref role="w3uIu" node="1vRkFORZx4X" resolve="execute" />
+    <property role="TrG5h" value="SumServiceInterface" />
+    <ref role="w3uIu" node="1vRkFORZx4X" resolve="SumRequestResponse" />
   </node>
   <node concept="w0DHm" id="1vRkFORZx4X">
-    <property role="TrG5h" value="execute" />
+    <property role="TrG5h" value="SumRequestResponse" />
     <node concept="w0F9L" id="1vRkFORZx4Y" role="w0Cl2">
       <property role="TrG5h" value="ExecuteRequest" />
       <property role="w2nz5" value="void" />
@@ -115,7 +115,7 @@
   <node concept="w1mdp" id="1qDekGLSppt">
     <property role="TrG5h" value="SumService" />
     <property role="w0W6p" value="concurrent" />
-    <ref role="Bkkpu" node="1vRkFORZwFa" resolve="OperationServiceInterface" />
+    <ref role="Bkkpu" node="1vRkFORZwFa" resolve="SumServiceInterface" />
     <node concept="BtCIo" id="1qDekGLSppu" role="BtDtv">
       <property role="TrG5h" value="sfsd" />
       <node concept="BhuH_" id="1qDekGLVT2W" role="BhigW">
@@ -133,7 +133,7 @@
       <property role="TrG5h" value="Sum" />
       <property role="w1sqP" value="sodep" />
       <property role="w1sC6" value="&quot;socket://localhost:9000&quot;" />
-      <ref role="BjuW6" node="1vRkFORZwFa" resolve="OperationServiceInterface" />
+      <ref role="BjuW6" node="1vRkFORZwFa" resolve="SumServiceInterface" />
     </node>
   </node>
 </model>
