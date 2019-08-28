@@ -17,6 +17,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_RequestMessage;
   private ConceptPresentation props_RequestResponse;
   private ConceptPresentation props_ResponseMessage;
+  private ConceptPresentation props_ServiceBehavior;
   private ConceptPresentation props_ThrowMessage;
   private ConceptPresentation props_microservice;
 
@@ -81,6 +82,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ResponseMessage = cpb.create();
         }
         return props_ResponseMessage;
+      case LanguageConceptSwitch.ServiceBehavior:
+        if (props_ServiceBehavior == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ServiceBehavior = cpb.create();
+        }
+        return props_ServiceBehavior;
       case LanguageConceptSwitch.ThrowMessage:
         if (props_ThrowMessage == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

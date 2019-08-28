@@ -17,8 +17,9 @@ public final class LanguageConceptSwitch {
   public static final int RequestMessage = 5;
   public static final int RequestResponse = 6;
   public static final int ResponseMessage = 7;
-  public static final int ThrowMessage = 8;
-  public static final int microservice = 9;
+  public static final int ServiceBehavior = 8;
+  public static final int ThrowMessage = 9;
+  public static final int microservice = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x77de623ba0547edL, 0xa860a4445e8de4c1L);
@@ -30,6 +31,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x17f752bd37f5e0ccL, RequestMessage);
     builder.put(0x17f752bd37f5c9ebL, RequestResponse);
     builder.put(0x17f752bd37f5f13dL, ResponseMessage);
+    builder.put(0x16a9394b31dfb2d3L, ServiceBehavior);
     builder.put(0x17f752bd37f78bdaL, ThrowMessage);
     builder.put(0x17f752bd37f231e4L, microservice);
     myIndex = builder.seal();

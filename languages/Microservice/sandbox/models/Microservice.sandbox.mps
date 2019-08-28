@@ -21,22 +21,22 @@
         <property id="1726939954760952335" name="name" index="w0ZyM" />
         <property id="1726939954760953088" name="type" index="w0ZYX" />
       </concept>
-      <concept id="1726939954760795008" name="Microservice.structure.OutputPort" flags="ng" index="w1h4X" />
       <concept id="1726939954760790500" name="Microservice.structure.microservice" flags="ng" index="w1mdp">
         <property id="1726939954760946468" name="execution" index="w0W6p" />
-        <reference id="1726939954761625761" name="outputPort" index="w2q8s" />
-        <reference id="1726939954761624050" name="inputPort" index="w2rHf" />
+        <child id="1632899335020588564" name="main" index="BtDtv" />
+        <child id="1632899335020584038" name="inputPort" index="BtEkH" />
       </concept>
       <concept id="1726939954760792604" name="Microservice.structure.InputPort" flags="ng" index="w1myx" />
       <concept id="1726939954760814870" name="Microservice.structure.Port" flags="ng" index="w1seF">
         <property id="1726939954760815624" name="Protocol" index="w1sqP" />
         <property id="1726939954760816827" name="Location" index="w1sC6" />
-        <reference id="1726939954761472229" name="Interfaces" index="w2WDo" />
+        <reference id="1632899335020926541" name="Interfaces" index="BjuW6" />
       </concept>
       <concept id="1726939954760818485" name="Microservice.structure.Interface" flags="ng" index="w1sQ8">
         <reference id="1726939954761349411" name="requestResponseMessage" index="w3uIu" />
         <reference id="1726939954761211453" name="throwMessage" index="w3WM0" />
       </concept>
+      <concept id="1632899335020589779" name="Microservice.structure.ServiceBehavior" flags="ng" index="BtCIo" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -74,12 +74,6 @@
     <ref role="w3WM0" node="1vRkFORY8H3" resolve="OperationNotSupported" />
     <ref role="w3uIu" node="1vRkFORYqYe" resolve="calculate" />
   </node>
-  <node concept="w1myx" id="1vRkFORZlAq">
-    <property role="TrG5h" value="Calculator" />
-    <property role="w1sqP" value="sodep" />
-    <property role="w1sC6" value="&quot;socket://localhost:8999&quot;" />
-    <ref role="w2WDo" node="1vRkFORYQXq" resolve="CalculatorInterface" />
-  </node>
   <node concept="w1sQ8" id="1vRkFORZwFa">
     <property role="TrG5h" value="OperationServiceInterface" />
     <ref role="w3uIu" node="1vRkFORZx4X" resolve="execute" />
@@ -102,16 +96,16 @@
       <property role="TrG5h" value="int" />
     </node>
   </node>
-  <node concept="w1mdp" id="1vRkFORZHX_">
-    <property role="TrG5h" value="CalculatorMicroService" />
+  <node concept="w1mdp" id="1qDekGLSppt">
+    <property role="TrG5h" value="SumService" />
     <property role="w0W6p" value="concurrent" />
-    <ref role="w2rHf" node="1vRkFORZlAq" resolve="Calculator" />
-    <ref role="w2q8s" node="1vRkFORZWx7" resolve="Operation" />
-  </node>
-  <node concept="w1h4X" id="1vRkFORZWx7">
-    <property role="TrG5h" value="Operation" />
-    <property role="w1sqP" value="sodep" />
-    <ref role="w2WDo" node="1vRkFORZwFa" resolve="OperationServiceInterface" />
+    <node concept="BtCIo" id="1qDekGLSppu" role="BtDtv" />
+    <node concept="w1myx" id="1qDekGLSVNl" role="BtEkH">
+      <property role="TrG5h" value="Sum" />
+      <property role="w1sqP" value="sodep" />
+      <property role="w1sC6" value="&quot;socket://localhost:9000&quot;" />
+      <ref role="BjuW6" node="1vRkFORZwFa" resolve="OperationServiceInterface" />
+    </node>
   </node>
 </model>
 
