@@ -3,3 +3,5 @@ artifacts/
 .project
 .classpath
 *_gen*
+.flattened*
+workspace.xml
