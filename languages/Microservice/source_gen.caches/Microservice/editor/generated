@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="ec5zc7ee7l2ird2z5xwhn09993o5ket">
-  <files names="EditorAspectDescriptorImpl.java:InputPort_Editor.java:InputPort_EditorBuilder_a.java:Interface_Editor.java:Interface_EditorBuilder_a.java:OutputPort_Editor.java:OutputPort_EditorBuilder_a.java:Parameter_Editor.java:Parameter_EditorBuilder_a.java:RequestResponseMessage_Editor.java:RequestResponseMessage_EditorBuilder_a.java:RequestType_Editor.java:RequestType_EditorBuilder_a.java:ThrowMessage_Editor.java:ThrowMessage_EditorBuilder_a.java:microservice_Editor.java:microservice_EditorBuilder_a.java" />
-</product>
-
