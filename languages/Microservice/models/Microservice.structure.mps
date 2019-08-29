@@ -49,39 +49,47 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="microservice" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1qDekGM51J$" role="1TKVEi">
+      <property role="IQ2ns" value="1632899335024024548" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="interface" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1vRkFORWDWP" resolve="Interface" />
+    </node>
     <node concept="PrWs8" id="1vRkFORWzjj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyi" id="1vRkFORX9c$" role="1TKVEl">
       <property role="IQ2nx" value="1726939954760946468" />
-      <property role="TrG5h" value="execution" />
+      <property role="TrG5h" value="directive" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="1qDekGLRTLA" role="1TKVEi">
       <property role="IQ2ns" value="1632899335020584038" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputPort" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1vRkFORWzCs" resolve="InputPort" />
     </node>
     <node concept="1TJgyj" id="1qDekGLRTZL" role="1TKVEi">
       <property role="IQ2ns" value="1632899335020584945" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outputPort" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1vRkFORW$e0" resolve="OutputPort" />
     </node>
-    <node concept="1TJgyj" id="1qDekGLRUSk" role="1TKVEi">
-      <property role="IQ2ns" value="1632899335020588564" />
+    <node concept="1TJgyj" id="1qDekGMf69c" role="1TKVEi">
+      <property role="IQ2ns" value="1632899335026664012" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="main" />
+      <property role="20kJfa" value="behavior" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qDekGLRVbj" resolve="ServiceBehavior" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
     <node concept="1TJgyj" id="1qDekGLY7Wl" role="1TKVEi">
       <property role="IQ2ns" value="1632899335022214933" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="include" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1vRkFORWDWP" resolve="Interface" />
     </node>
   </node>
@@ -90,9 +98,25 @@
     <property role="TrG5h" value="InputPort" />
     <property role="34LRSv" value="inputPort" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" node="1vRkFORWD4m" resolve="Port" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1vRkFORW$4_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="1qDekGMaUN$" role="1TKVEl">
+      <property role="IQ2nx" value="1632899335025568996" />
+      <property role="TrG5h" value="Location" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1qDekGMaUUD" role="1TKVEl">
+      <property role="IQ2nx" value="1632899335025569449" />
+      <property role="TrG5h" value="Protocol" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="1qDekGMaVDA" role="1TKVEi">
+      <property role="IQ2ns" value="1632899335025572454" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="Interfaces" />
+      <ref role="20lvS9" node="1vRkFORWDWP" resolve="Interface" />
     </node>
   </node>
   <node concept="1TIwiD" id="1vRkFORW$e0">
@@ -100,32 +124,17 @@
     <property role="TrG5h" value="OutputPort" />
     <property role="34LRSv" value="outputPort" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" node="1vRkFORWD4m" resolve="Port" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1vRkFORW$ur" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="1vRkFORWD4m">
-    <property role="EcuMT" value="1726939954760814870" />
-    <property role="TrG5h" value="Port" />
-    <property role="34LRSv" value="port" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1vRkFORWDbp" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="1vRkFORWDg8" role="1TKVEl">
-      <property role="IQ2nx" value="1726939954760815624" />
+    <node concept="1TJgyi" id="1qDekGMaWvz" role="1TKVEl">
+      <property role="IQ2nx" value="1632899335025575907" />
       <property role="TrG5h" value="Protocol" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="1vRkFORWDyV" role="1TKVEl">
-      <property role="IQ2nx" value="1726939954760816827" />
-      <property role="TrG5h" value="Location" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="1qDekGLTdpd" role="1TKVEi">
-      <property role="IQ2ns" value="1632899335020926541" />
+    <node concept="1TJgyj" id="1qDekGMaX2P" role="1TKVEi">
+      <property role="IQ2ns" value="1632899335025578165" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="Interfaces" />
       <ref role="20lvS9" node="1vRkFORWDWP" resolve="Interface" />
@@ -150,7 +159,7 @@
       <property role="IQ2ns" value="1726939954761349411" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="requestResponseMessage" />
-      <ref role="20lvS9" node="1vRkFORXsBF" resolve="RequestResponse" />
+      <ref role="20lvS9" node="1vRkFORXsBF" resolve="RequestResponseMessage" />
     </node>
   </node>
   <node concept="1TIwiD" id="1vRkFORXanL">
@@ -158,21 +167,19 @@
     <property role="TrG5h" value="Parameter" />
     <property role="34LRSv" value="parameter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1vRkFORXaCf" role="1TKVEl">
-      <property role="IQ2nx" value="1726939954760952335" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="1vRkFORXaO0" role="1TKVEl">
       <property role="IQ2nx" value="1726939954760953088" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="1qDekGM6i4R" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1vRkFORXsBF">
     <property role="EcuMT" value="1726939954761026027" />
-    <property role="TrG5h" value="RequestResponse" />
-    <property role="34LRSv" value="requestResponse" />
+    <property role="TrG5h" value="RequestResponseMessage" />
+    <property role="34LRSv" value="requestResponseMessage" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1vRkFORXsUs" role="PzmwI">
@@ -181,22 +188,23 @@
     <node concept="1TJgyj" id="1vRkFORXtvZ" role="1TKVEi">
       <property role="IQ2ns" value="1726939954761029631" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="requestMessage" />
+      <property role="20kJfa" value="requestType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1vRkFORXu3c" resolve="RequestMessage" />
+      <ref role="20lvS9" node="1vRkFORXu3c" resolve="RequestType" />
     </node>
     <node concept="1TJgyj" id="1vRkFORXuOu" role="1TKVEi">
       <property role="IQ2ns" value="1726939954761035038" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="responseMessage" />
+      <property role="20kJfa" value="responseType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1vRkFORXv4X" resolve="ResponseMessage" />
+      <ref role="20lvS9" node="1vRkFORXv4X" resolve="ResponseType" />
     </node>
   </node>
   <node concept="1TIwiD" id="1vRkFORXu3c">
     <property role="EcuMT" value="1726939954761031884" />
-    <property role="TrG5h" value="RequestMessage" />
-    <property role="34LRSv" value="requestMessage" />
+    <property role="TrG5h" value="RequestType" />
+    <property role="34LRSv" value="requestType" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1vRkFORXueV" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -208,16 +216,16 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1vRkFORXanL" resolve="Parameter" />
     </node>
-    <node concept="1TJgyi" id="1vRkFORZyDS" role="1TKVEl">
-      <property role="IQ2nx" value="1726939954761575032" />
+    <node concept="1TJgyi" id="1qDekGM5Amv" role="1TKVEl">
+      <property role="IQ2nx" value="1632899335024174495" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="1vRkFORXv4X">
     <property role="EcuMT" value="1726939954761036093" />
-    <property role="TrG5h" value="ResponseMessage" />
-    <property role="34LRSv" value="responseMessage" />
+    <property role="TrG5h" value="ResponseType" />
+    <property role="34LRSv" value="responseType" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1vRkFORXvem" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -231,48 +239,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1vRkFORXSZP" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1qDekGLRVbj">
-    <property role="EcuMT" value="1632899335020589779" />
-    <property role="TrG5h" value="ServiceBehavior" />
-    <property role="34LRSv" value="serviceBehavior" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1qDekGLRV_6" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="1qDekGLV1PR" role="1TKVEi">
-      <property role="IQ2ns" value="1632899335021403511" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1qDekGLVd8I" resolve="BehaviorMethod" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1qDekGLVd8I">
-    <property role="EcuMT" value="1632899335021449774" />
-    <property role="TrG5h" value="BehaviorMethod" />
-    <property role="34LRSv" value="behaviorMethod" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1qDekGLVdFT" role="1TKVEi">
-      <property role="IQ2ns" value="1632899335021452025" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:fzclF8l" resolve="Statement" />
-    </node>
-    <node concept="PrWs8" id="1qDekGLVdPk" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="1qDekGLVdWp" role="1TKVEl">
-      <property role="IQ2nx" value="1632899335021453081" />
-      <property role="TrG5h" value="inputParameter" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="1qDekGLVe8a" role="1TKVEl">
-      <property role="IQ2nx" value="1632899335021453834" />
-      <property role="TrG5h" value="outputParameter" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

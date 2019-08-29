@@ -9,16 +9,13 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_BehaviorMethod;
   private ConceptPresentation props_InputPort;
   private ConceptPresentation props_Interface;
   private ConceptPresentation props_OutputPort;
   private ConceptPresentation props_Parameter;
-  private ConceptPresentation props_Port;
-  private ConceptPresentation props_RequestMessage;
-  private ConceptPresentation props_RequestResponse;
-  private ConceptPresentation props_ResponseMessage;
-  private ConceptPresentation props_ServiceBehavior;
+  private ConceptPresentation props_RequestResponseMessage;
+  private ConceptPresentation props_RequestType;
+  private ConceptPresentation props_ResponseType;
   private ConceptPresentation props_ThrowMessage;
   private ConceptPresentation props_microservice;
 
@@ -27,13 +24,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.BehaviorMethod:
-        if (props_BehaviorMethod == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_BehaviorMethod = cpb.create();
-        }
-        return props_BehaviorMethod;
       case LanguageConceptSwitch.InputPort:
         if (props_InputPort == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -58,45 +48,31 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Parameter:
         if (props_Parameter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("parameter");
+          cpb.presentationByName();
           props_Parameter = cpb.create();
         }
         return props_Parameter;
-      case LanguageConceptSwitch.Port:
-        if (props_Port == null) {
+      case LanguageConceptSwitch.RequestResponseMessage:
+        if (props_RequestResponseMessage == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Port = cpb.create();
+          props_RequestResponseMessage = cpb.create();
         }
-        return props_Port;
-      case LanguageConceptSwitch.RequestMessage:
-        if (props_RequestMessage == null) {
+        return props_RequestResponseMessage;
+      case LanguageConceptSwitch.RequestType:
+        if (props_RequestType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_RequestMessage = cpb.create();
+          props_RequestType = cpb.create();
         }
-        return props_RequestMessage;
-      case LanguageConceptSwitch.RequestResponse:
-        if (props_RequestResponse == null) {
+        return props_RequestType;
+      case LanguageConceptSwitch.ResponseType:
+        if (props_ResponseType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_RequestResponse = cpb.create();
+          props_ResponseType = cpb.create();
         }
-        return props_RequestResponse;
-      case LanguageConceptSwitch.ResponseMessage:
-        if (props_ResponseMessage == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_ResponseMessage = cpb.create();
-        }
-        return props_ResponseMessage;
-      case LanguageConceptSwitch.ServiceBehavior:
-        if (props_ServiceBehavior == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_ServiceBehavior = cpb.create();
-        }
-        return props_ServiceBehavior;
+        return props_ResponseType;
       case LanguageConceptSwitch.ThrowMessage:
         if (props_ThrowMessage == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

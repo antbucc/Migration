@@ -14,16 +14,13 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptBehaviorMethod = createDescriptorForBehaviorMethod();
   /*package*/ final ConceptDescriptor myConceptInputPort = createDescriptorForInputPort();
   /*package*/ final ConceptDescriptor myConceptInterface = createDescriptorForInterface();
   /*package*/ final ConceptDescriptor myConceptOutputPort = createDescriptorForOutputPort();
   /*package*/ final ConceptDescriptor myConceptParameter = createDescriptorForParameter();
-  /*package*/ final ConceptDescriptor myConceptPort = createDescriptorForPort();
-  /*package*/ final ConceptDescriptor myConceptRequestMessage = createDescriptorForRequestMessage();
-  /*package*/ final ConceptDescriptor myConceptRequestResponse = createDescriptorForRequestResponse();
-  /*package*/ final ConceptDescriptor myConceptResponseMessage = createDescriptorForResponseMessage();
-  /*package*/ final ConceptDescriptor myConceptServiceBehavior = createDescriptorForServiceBehavior();
+  /*package*/ final ConceptDescriptor myConceptRequestResponseMessage = createDescriptorForRequestResponseMessage();
+  /*package*/ final ConceptDescriptor myConceptRequestType = createDescriptorForRequestType();
+  /*package*/ final ConceptDescriptor myConceptResponseType = createDescriptorForResponseType();
   /*package*/ final ConceptDescriptor myConceptThrowMessage = createDescriptorForThrowMessage();
   /*package*/ final ConceptDescriptor myConceptmicroservice = createDescriptorFormicroservice();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -41,15 +38,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBehaviorMethod, myConceptInputPort, myConceptInterface, myConceptOutputPort, myConceptParameter, myConceptPort, myConceptRequestMessage, myConceptRequestResponse, myConceptResponseMessage, myConceptServiceBehavior, myConceptThrowMessage, myConceptmicroservice);
+    return Arrays.asList(myConceptInputPort, myConceptInterface, myConceptOutputPort, myConceptParameter, myConceptRequestResponseMessage, myConceptRequestType, myConceptResponseType, myConceptThrowMessage, myConceptmicroservice);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.BehaviorMethod:
-        return myConceptBehaviorMethod;
       case LanguageConceptSwitch.InputPort:
         return myConceptInputPort;
       case LanguageConceptSwitch.Interface:
@@ -58,16 +53,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptOutputPort;
       case LanguageConceptSwitch.Parameter:
         return myConceptParameter;
-      case LanguageConceptSwitch.Port:
-        return myConceptPort;
-      case LanguageConceptSwitch.RequestMessage:
-        return myConceptRequestMessage;
-      case LanguageConceptSwitch.RequestResponse:
-        return myConceptRequestResponse;
-      case LanguageConceptSwitch.ResponseMessage:
-        return myConceptResponseMessage;
-      case LanguageConceptSwitch.ServiceBehavior:
-        return myConceptServiceBehavior;
+      case LanguageConceptSwitch.RequestResponseMessage:
+        return myConceptRequestResponseMessage;
+      case LanguageConceptSwitch.RequestType:
+        return myConceptRequestType;
+      case LanguageConceptSwitch.ResponseType:
+        return myConceptResponseType;
       case LanguageConceptSwitch.ThrowMessage:
         return myConceptThrowMessage;
       case LanguageConceptSwitch.microservice:
@@ -86,25 +77,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForBehaviorMethod() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "BehaviorMethod", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x16a9394b31ecd22eL);
-    b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1632899335021449774");
-    b.version(2);
-    b.property("inputParameter", 0x16a9394b31ecdf19L).type(PrimitiveTypeId.STRING).origin("1632899335021453081").done();
-    b.property("outputParameter", 0x16a9394b31ece20aL).type(PrimitiveTypeId.STRING).origin("1632899335021453834").done();
-    b.aggregate("body", 0x16a9394b31ecdaf9L).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b215L).optional(false).ordered(true).multiple(false).origin("1632899335021452025").done();
-    b.alias("behaviorMethod");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForInputPort() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "InputPort", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f23a1cL);
     b.class_(false, false, true);
-    b.super_("Microservice.structure.Port", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29116L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954760792604");
     b.version(2);
+    b.property("Location", 0x16a9394b322bace4L).type(PrimitiveTypeId.STRING).origin("1632899335025568996").done();
+    b.property("Protocol", 0x16a9394b322baea9L).type(PrimitiveTypeId.STRING).origin("1632899335025569449").done();
+    b.associate("Interfaces", 0x16a9394b322bba66L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29f35L).optional(true).origin("1632899335025572454").done();
     b.alias("inputPort");
     return b.create();
   }
@@ -122,74 +103,53 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForOutputPort() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "OutputPort", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f24380L);
     b.class_(false, false, true);
-    b.super_("Microservice.structure.Port", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29116L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954760795008");
     b.version(2);
+    b.property("Protocol", 0x16a9394b322bc7e3L).type(PrimitiveTypeId.STRING).origin("1632899335025575907").done();
+    b.associate("Interfaces", 0x16a9394b322bd0b5L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29f35L).optional(true).origin("1632899335025578165").done();
     b.alias("outputPort");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForParameter() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "Parameter", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f4a5f1L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954760951281");
     b.version(2);
-    b.property("name", 0x17f752bd37f4aa0fL).type(PrimitiveTypeId.STRING).origin("1726939954760952335").done();
     b.property("type", 0x17f752bd37f4ad00L).type(PrimitiveTypeId.STRING).origin("1726939954760953088").done();
     b.alias("parameter");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForPort() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "Port", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29116L);
-    b.class_(false, false, true);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954760814870");
-    b.version(2);
-    b.property("Protocol", 0x17f752bd37f29408L).type(PrimitiveTypeId.STRING).origin("1726939954760815624").done();
-    b.property("Location", 0x17f752bd37f298bbL).type(PrimitiveTypeId.STRING).origin("1726939954760816827").done();
-    b.associate("Interfaces", 0x16a9394b31e4d64dL).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29f35L).optional(true).origin("1632899335020926541").done();
-    b.alias("port");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForRequestMessage() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "RequestMessage", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5e0ccL);
-    b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954761031884");
-    b.version(2);
-    b.property("type", 0x17f752bd37fe2a78L).type(PrimitiveTypeId.STRING).origin("1726939954761575032").done();
-    b.aggregate("parameters", 0x17f752bd37f9bae9L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f4a5f1L).optional(false).ordered(true).multiple(true).origin("1726939954761284329").done();
-    b.alias("requestMessage");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForRequestResponse() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "RequestResponse", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5c9ebL);
+  private static ConceptDescriptor createDescriptorForRequestResponseMessage() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "RequestResponseMessage", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5c9ebL);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954761026027");
     b.version(2);
-    b.aggregate("requestMessage", 0x17f752bd37f5d7ffL).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5e0ccL).optional(false).ordered(true).multiple(false).origin("1726939954761029631").done();
-    b.aggregate("responseMessage", 0x17f752bd37f5ed1eL).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5f13dL).optional(false).ordered(true).multiple(false).origin("1726939954761035038").done();
-    b.alias("requestResponse");
+    b.aggregate("requestType", 0x17f752bd37f5d7ffL).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5e0ccL).optional(false).ordered(true).multiple(false).origin("1726939954761029631").done();
+    b.aggregate("responseType", 0x17f752bd37f5ed1eL).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5f13dL).optional(false).ordered(true).multiple(false).origin("1726939954761035038").done();
+    b.alias("requestResponseMessage");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForResponseMessage() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "ResponseMessage", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5f13dL);
+  private static ConceptDescriptor createDescriptorForRequestType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "RequestType", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5e0ccL);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954761031884");
+    b.version(2);
+    b.property("type", 0x16a9394b3216659fL).type(PrimitiveTypeId.STRING).origin("1632899335024174495").done();
+    b.aggregate("parameters", 0x17f752bd37f9bae9L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f4a5f1L).optional(false).ordered(true).multiple(true).origin("1726939954761284329").done();
+    b.alias("requestType");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForResponseType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "ResponseType", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f5f13dL);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954761036093");
     b.version(2);
-    b.alias("responseMessage");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForServiceBehavior() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Microservice", "ServiceBehavior", 0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x16a9394b31dfb2d3L);
-    b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1632899335020589779");
-    b.version(2);
-    b.aggregate("body", 0x16a9394b31ec1d77L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x16a9394b31ecd22eL).optional(false).ordered(true).multiple(false).origin("1632899335021403511").done();
-    b.alias("serviceBehavior");
+    b.alias("responseType");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForThrowMessage() {
@@ -207,11 +167,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)/1726939954760790500");
     b.version(2);
-    b.property("execution", 0x17f752bd37f49324L).type(PrimitiveTypeId.STRING).origin("1726939954760946468").done();
-    b.associate("include", 0x16a9394b31f87f15L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29f35L).optional(true).origin("1632899335022214933").done();
-    b.aggregate("inputPort", 0x16a9394b31df9c66L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f23a1cL).optional(true).ordered(true).multiple(false).origin("1632899335020584038").done();
-    b.aggregate("outputPort", 0x16a9394b31df9ff1L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f24380L).optional(true).ordered(true).multiple(false).origin("1632899335020584945").done();
-    b.aggregate("main", 0x16a9394b31dfae14L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x16a9394b31dfb2d3L).optional(false).ordered(true).multiple(false).origin("1632899335020588564").done();
+    b.property("directive", 0x17f752bd37f49324L).type(PrimitiveTypeId.STRING).origin("1726939954760946468").done();
+    b.associate("include", 0x16a9394b31f87f15L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29f35L).optional(false).origin("1632899335022214933").done();
+    b.aggregate("interface", 0x16a9394b32141be4L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f29f35L).optional(false).ordered(true).multiple(false).origin("1632899335024024548").done();
+    b.aggregate("inputPort", 0x16a9394b31df9c66L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f23a1cL).optional(false).ordered(true).multiple(false).origin("1632899335020584038").done();
+    b.aggregate("outputPort", 0x16a9394b31df9ff1L).target(0x77de623ba0547edL, 0xa860a4445e8de4c1L, 0x17f752bd37f24380L).optional(false).ordered(true).multiple(false).origin("1632899335020584945").done();
+    b.aggregate("behavior", 0x16a9394b323c624cL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b200L).optional(false).ordered(true).multiple(false).origin("1632899335026664012").done();
     b.alias("microservice");
     return b.create();
   }
