@@ -52,6 +52,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
   </registry>
   <node concept="w0d_B" id="1vRkFORY8H3">
     <property role="TrG5h" value="OperationNotSupported" />
@@ -121,7 +129,70 @@
       <property role="$wJUC" value="sodep" />
       <ref role="$wIBY" node="1vRkFORZwFa" resolve="OperationServiceInterface" />
     </node>
-    <node concept="3clFbS" id="1qDekGMfvwj" role="$_lG7" />
+    <node concept="1PaTwC" id="4NDIBa5aiBM" role="$_lG7">
+      <node concept="3oM_SD" id="4NDIBa5aiBQ" role="1PaTwD">
+        <property role="3oM_SC" value="dlksjflsfd" />
+      </node>
+    </node>
+    <node concept="1PaTwC" id="4NDIBa5aiBZ" role="$_lG7">
+      <node concept="3oM_SD" id="4NDIBa5aiBY" role="1PaTwD">
+        <property role="3oM_SC" value="" />
+      </node>
+    </node>
+    <node concept="1PaTwC" id="4NDIBa5a$UN" role="$_lG7">
+      <node concept="3oM_SD" id="4NDIBa5a$UM" role="1PaTwD">
+        <property role="3oM_SC" value="dskfj" />
+      </node>
+    </node>
+    <node concept="1PaTwC" id="4NDIBa5a$UX" role="$_lG7">
+      <node concept="3oM_SD" id="4NDIBa5a$UW" role="1PaTwD">
+        <property role="3oM_SC" value="slkdfjlskjdf" />
+      </node>
+    </node>
+    <node concept="1PaTwC" id="4NDIBa5a$V9" role="$_lG7">
+      <node concept="3oM_SD" id="4NDIBa5a$V8" role="1PaTwD">
+        <property role="3oM_SC" value="likjldskmf" />
+      </node>
+      <node concept="3oM_SD" id="4NDIBa5aR9d" role="1PaTwD">
+        <property role="3oM_SC" value="slidjh" />
+      </node>
+    </node>
+    <node concept="1PaTwC" id="4NDIBa5aR9h" role="$_lG7">
+      <node concept="3oM_SD" id="4NDIBa5aR9g" role="1PaTwD">
+        <property role="3oM_SC" value="sdlfkgjsidjf" />
+      </node>
+      <node concept="3oM_SD" id="4NDIBa5aR9x" role="1PaTwD">
+        <property role="3oM_SC" value="voiehrgoiv" />
+      </node>
+      <node concept="3oM_SD" id="4NDIBa5aR9$" role="1PaTwD">
+        <property role="3oM_SC" value="oigj" />
+      </node>
+      <node concept="3oM_SD" id="4NDIBa5aR9C" role="1PaTwD">
+        <property role="3oM_SC" value="" />
+      </node>
+    </node>
+    <node concept="1PaTwC" id="4NDIBa5aR9I" role="$_lG7">
+      <node concept="3oM_SD" id="4NDIBa5aR9H" role="1PaTwD">
+        <property role="3oM_SC" value="" />
+      </node>
+    </node>
+    <node concept="1PaTwC" id="4NDIBa5aiBT" role="$_lG7">
+      <node concept="3oM_SD" id="4NDIBa5aiBS" role="1PaTwD">
+        <property role="3oM_SC" value="" />
+      </node>
+    </node>
+  </node>
+  <node concept="w1mdp" id="4NDIBa58CS8">
+    <property role="TrG5h" value="kemal" />
+    <property role="w0W6p" value="calc2" />
+    <ref role="Bkkpu" node="1qDekGM7ZAA" resolve="CalculatorInterface" />
+    <node concept="w1sQ8" id="4NDIBa58CS9" role="$JiaJ" />
+    <node concept="w1myx" id="4NDIBa58CSa" role="BtEkH">
+      <property role="TrG5h" value="request" />
+      <property role="$wDvy" value="sodep" />
+    </node>
+    <node concept="w1h4X" id="4NDIBa58CSb" role="BtEqU" />
+    <node concept="3clFbS" id="4NDIBa58CSc" role="$_lG7" />
   </node>
 </model>
 

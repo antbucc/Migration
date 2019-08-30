@@ -8,7 +8,7 @@
   <imports>
     <import index="hbv9" ref="r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -32,6 +32,9 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
@@ -196,20 +199,16 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="1iCGBv" id="1qDekGMf7oS" role="3EZMnx">
+      <node concept="3F2HdR" id="4NDIBa5aiIh" role="3EZMnx">
         <ref role="1NtTu8" to="hbv9:1qDekGMf69c" resolve="behavior" />
-        <node concept="1sVBvm" id="1qDekGMf7oU" role="1sWHZn">
-          <node concept="3F2HdR" id="1qDekGMf7vS" role="2wV5jI">
-            <ref role="1NtTu8" to="tpee:fzcqZ_x" resolve="statement" />
-          </node>
-        </node>
+        <node concept="2iRkQZ" id="4NDIBa5aiJc" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="1qDekGMeKnm" role="3EZMnx">
         <property role="3F0ifm" value="}" />
-      </node>
-      <node concept="3F0ifn" id="1qDekGLUS2i" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
-        <node concept="pVoyu" id="1qDekGLUSGH" role="3F10Kt">
+        <node concept="pVoyu" id="4NDIBa5a$Vm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4NDIBa5a$Vo" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -218,10 +217,7 @@
         <node concept="3mYdg7" id="1qDekGLSdYj" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
-        <node concept="ljvvj" id="1qDekGLUSgm" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="1qDekGLUS$M" role="3F10Kt">
+        <node concept="pVoyu" id="4NDIBa5a$Y7" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -623,6 +619,17 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1qDekGMbYPM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4NDIBa58Pjw">
+    <ref role="1XX52x" to="hbv9:4NDIBa58Pbw" resolve="TextStatement" />
+    <node concept="3EZMnI" id="4NDIBa58Pkk" role="2wV5jI">
+      <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+      <node concept="3F0ifn" id="4NDIBa59ZCh" role="3EZMnx" />
+      <node concept="3F1sOY" id="4NDIBa58Pku" role="3EZMnx">
+        <ref role="1NtTu8" to="hbv9:4NDIBa58Pjm" resolve="line" />
+      </node>
+      <node concept="3F0ifn" id="4NDIBa59ZCu" role="3EZMnx" />
     </node>
   </node>
 </model>
