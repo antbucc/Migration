@@ -24,9 +24,13 @@
       </concept>
       <concept id="1726939954760790500" name="Microservice.structure.Microservice" flags="ng" index="w1mdp">
         <property id="1726939954760946468" name="directive" index="w0W6p" />
+        <child id="1632899335036204398" name="interfaces" index="$pcK_" />
       </concept>
       <concept id="1726939954760818485" name="Microservice.structure.Interface" flags="ng" index="w1sQ8">
         <reference id="1726939954761349411" name="requestResponseMessage" index="w3uIu" />
+      </concept>
+      <concept id="3408496264158182648" name="Microservice.structure.InterfaceReference" flags="ng" index="WapmN">
+        <reference id="3408496264158182649" name="interface" index="WapmM" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -60,6 +64,9 @@
   <node concept="w1mdp" id="1qDekGMO4s8">
     <property role="TrG5h" value="calculator" />
     <property role="w0W6p" value="concurrent" />
+    <node concept="WapmN" id="2XdqkGjpJBk" role="$pcK_">
+      <ref role="WapmM" node="1qDekGMBHfO" resolve="OperationServiceInterface" />
+    </node>
   </node>
 </model>
 

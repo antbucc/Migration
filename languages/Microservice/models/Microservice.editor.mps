@@ -27,6 +27,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -83,10 +84,10 @@
       <node concept="3F0ifn" id="1qDekGLXvfV" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
-      <node concept="3F2HdR" id="1qDekGMNMtq" role="3EZMnx">
+      <node concept="3F2HdR" id="2XdqkGjpfPA" role="3EZMnx">
         <ref role="1NtTu8" to="hbv9:1qDekGMNvlI" resolve="interfaces" />
-        <node concept="2iRkQZ" id="1qDekGMNMtt" role="2czzBx" />
-        <node concept="VPM3Z" id="1qDekGMNMtu" role="3F10Kt" />
+        <node concept="l2Vlx" id="2XdqkGjpfPC" role="2czzBx" />
+        <node concept="VPxyj" id="2XdqkGjp_j7" role="3F10Kt" />
       </node>
       <node concept="3F0ifn" id="1qDekGLSdXM" role="3EZMnx">
         <property role="3F0ifm" value="execution" />
@@ -602,6 +603,18 @@
         </node>
         <node concept="ljvvj" id="1qDekGMsetA" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2XdqkGjpfNU">
+    <ref role="1XX52x" to="hbv9:2XdqkGjpfNS" resolve="InterfaceReference" />
+    <node concept="1iCGBv" id="2XdqkGjpfNV" role="2wV5jI">
+      <ref role="1NtTu8" to="hbv9:2XdqkGjpfNT" resolve="interface" />
+      <node concept="1sVBvm" id="2XdqkGjpfNW" role="1sWHZn">
+        <node concept="3F0A7n" id="2XdqkGjpfNX" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
