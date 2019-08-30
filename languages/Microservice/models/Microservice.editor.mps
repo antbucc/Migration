@@ -25,6 +25,10 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -57,6 +61,11 @@
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -153,24 +162,8 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="1iCGBv" id="1qDekGMQeln" role="3EZMnx">
-        <ref role="1NtTu8" to="hbv9:1qDekGLRTLA" resolve="inputPort" />
-        <node concept="1sVBvm" id="1qDekGMQelp" role="1sWHZn">
-          <node concept="1iCGBv" id="1qDekGMQeqV" role="2wV5jI">
-            <ref role="1NtTu8" to="hbv9:1qDekGMaVDA" resolve="Interfaces" />
-            <node concept="1sVBvm" id="1qDekGMQeqX" role="1sWHZn">
-              <node concept="1iCGBv" id="1qDekGMQevK" role="2wV5jI">
-                <ref role="1NtTu8" to="hbv9:1vRkFORYF$z" resolve="requestResponseMessage" />
-                <node concept="1sVBvm" id="1qDekGMQevM" role="1sWHZn">
-                  <node concept="3F0A7n" id="1qDekGMQe$_" role="2wV5jI">
-                    <property role="1Intyy" value="true" />
-                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="PMmxH" id="2XdqkGjst2s" role="3EZMnx">
+        <ref role="PMmxG" node="2XdqkGjst2k" resolve="InterfaceRequestMethodName" />
       </node>
       <node concept="3F0ifn" id="1qDekGMvbbk" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -193,23 +186,32 @@
       <node concept="3F0ifn" id="1qDekGMvt_G" role="3EZMnx">
         <property role="3F0ifm" value="{" />
       </node>
-      <node concept="3F0ifn" id="1qDekGMLF7k" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
-      </node>
-      <node concept="3F2HdR" id="1qDekGMLFBp" role="3EZMnx">
-        <ref role="1NtTu8" to="hbv9:1qDekGMjesM" resolve="behavior" />
-        <node concept="2iRkQZ" id="1qDekGMLFBs" role="2czzBx" />
-        <node concept="VPM3Z" id="1qDekGMLFBt" role="3F10Kt" />
-        <node concept="pVoyu" id="1qDekGMMb3m" role="3F10Kt">
+      <node concept="3EZMnI" id="2XdqkGjst3l" role="3EZMnx">
+        <node concept="2iRkQZ" id="2XdqkGjst3m" role="2iSdaV" />
+        <node concept="3EZMnI" id="2XdqkGjsCP0" role="3EZMnx">
+          <node concept="l2Vlx" id="2XdqkGjsCP1" role="2iSdaV" />
+          <node concept="3F2HdR" id="1qDekGMLFBp" role="3EZMnx">
+            <ref role="1NtTu8" to="hbv9:1qDekGMjesM" resolve="behavior" />
+            <node concept="VPM3Z" id="1qDekGMLFBt" role="3F10Kt" />
+            <node concept="lj46D" id="2XdqkGjrzJs" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="2iRkQZ" id="2XdqkGjst2i" role="2czzBx" />
+          </node>
+        </node>
+        <node concept="pVoyu" id="2XdqkGjst4e" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="lj46D" id="1qDekGMQyf3" role="3F10Kt">
+        <node concept="lj46D" id="2XdqkGjst4g" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="1qDekGMvtEN" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <node concept="pVoyu" id="1qDekGMvtNf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2XdqkGjrcDI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -642,6 +644,29 @@
         <node concept="3F0A7n" id="2XdqkGjpfNX" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2XdqkGjst2k">
+    <property role="TrG5h" value="InterfaceRequestMethodName" />
+    <ref role="1XX52x" to="hbv9:1vRkFORWz7$" resolve="Microservice" />
+    <node concept="1iCGBv" id="2XdqkGjst2l" role="2wV5jI">
+      <ref role="1NtTu8" to="hbv9:1qDekGLRTLA" resolve="inputPort" />
+      <node concept="1sVBvm" id="2XdqkGjst2m" role="1sWHZn">
+        <node concept="1iCGBv" id="2XdqkGjst2n" role="2wV5jI">
+          <ref role="1NtTu8" to="hbv9:1qDekGMaVDA" resolve="Interfaces" />
+          <node concept="1sVBvm" id="2XdqkGjst2o" role="1sWHZn">
+            <node concept="1iCGBv" id="2XdqkGjst2p" role="2wV5jI">
+              <ref role="1NtTu8" to="hbv9:1vRkFORYF$z" resolve="requestResponseMessage" />
+              <node concept="1sVBvm" id="2XdqkGjst2q" role="1sWHZn">
+                <node concept="3F0A7n" id="2XdqkGjst2r" role="2wV5jI">
+                  <property role="1Intyy" value="true" />
+                  <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
