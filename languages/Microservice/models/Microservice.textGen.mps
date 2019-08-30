@@ -289,7 +289,7 @@
       <node concept="3clFbS" id="1qDekGMSEyq" role="2VODD2">
         <node concept="3clFbF" id="1qDekGMSEHt" role="3cqZAp">
           <node concept="Xl_RD" id="1qDekGMSEHs" role="3clFbG">
-            <property role="Xl_RC" value=".iol" />
+            <property role="Xl_RC" value="iol" />
           </node>
         </node>
       </node>
