@@ -67,6 +67,13 @@
     <node concept="WapmN" id="2XdqkGjpJBk" role="$pcK_">
       <ref role="WapmM" node="1qDekGMBHfO" resolve="OperationServiceInterface" />
     </node>
+    <node concept="WapmN" id="2XdqkGjpJBv" role="$pcK_">
+      <ref role="WapmM" node="2XdqkGjpJBr" resolve="OperationServiceInterface2" />
+    </node>
+  </node>
+  <node concept="w1sQ8" id="2XdqkGjpJBr">
+    <property role="TrG5h" value="OperationServiceInterface2" />
+    <ref role="w3uIu" node="1qDekGMBHFX" resolve="execute" />
   </node>
 </model>
 
