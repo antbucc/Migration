@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Microservice/Microservice.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Microservice/sandbox/Microservice.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewSolution/NewSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Simple/Simple.msd" folder="source code sample" />
     </projectModules>
   </component>
 </project>
