@@ -212,7 +212,7 @@
       <property role="IQ2ns" value="1726939954761284329" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1vRkFORXanL" resolve="Parameter" />
     </node>
     <node concept="1TJgyi" id="1qDekGM5Amv" role="1TKVEl">

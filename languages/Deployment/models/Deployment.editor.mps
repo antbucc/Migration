@@ -15,6 +15,7 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -69,7 +70,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="1qDekGLZEoC" role="3EZMnx">
-          <property role="3F0ifm" value="from" />
+          <property role="3F0ifm" value="FROM" />
         </node>
         <node concept="3F0ifn" id="1qDekGLZEoD" role="3EZMnx">
           <property role="3F0ifm" value=":" />
@@ -84,7 +85,7 @@
           </node>
         </node>
         <node concept="3F0ifn" id="1qDekGLZEoH" role="3EZMnx">
-          <property role="3F0ifm" value="maintainer" />
+          <property role="3F0ifm" value="MAINTAINER" />
         </node>
         <node concept="3F0ifn" id="1qDekGLZEoI" role="3EZMnx">
           <property role="3F0ifm" value=":" />
@@ -99,7 +100,7 @@
           </node>
         </node>
         <node concept="3F0ifn" id="1qDekGLZEoM" role="3EZMnx">
-          <property role="3F0ifm" value="expose" />
+          <property role="3F0ifm" value="EXPOSE" />
         </node>
         <node concept="3F0ifn" id="1qDekGLZEoN" role="3EZMnx">
           <property role="3F0ifm" value=":" />
@@ -113,28 +114,36 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F0ifn" id="1qDekGLZEoR" role="3EZMnx">
-          <node concept="ljvvj" id="1qDekGLZEoS" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
         <node concept="3F0ifn" id="1qDekGLZEoT" role="3EZMnx">
-          <property role="3F0ifm" value="copy" />
+          <property role="3F0ifm" value="COPY" />
         </node>
         <node concept="3F0ifn" id="1qDekGLZEoU" role="3EZMnx">
           <property role="3F0ifm" value=":" />
           <node concept="11L4FC" id="1qDekGLZEoV" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="ljvvj" id="1qDekGLZEoW" role="3F10Kt">
+        </node>
+        <node concept="3F0A7n" id="62GV8nShFLw" role="3EZMnx">
+          <ref role="1NtTu8" to="hrda:62GV8nShFAH" resolve="copy" />
+        </node>
+        <node concept="3F0ifn" id="62GV8nShFjS" role="3EZMnx">
+          <property role="3F0ifm" value="CMD:" />
+          <node concept="pVoyu" id="62GV8nShGhM" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="3F0A7n" id="62GV8nShFp$" role="3EZMnx">
+          <ref role="1NtTu8" to="hrda:1qDekGM2_cG" resolve="Command" />
+        </node>
       </node>
+      <node concept="3F0ifn" id="62GV8nSig0X" role="3EZMnx" />
       <node concept="3F0ifn" id="1qDekGLZEpb" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="1qDekGLZEpc" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
+        </node>
+        <node concept="pVoyu" id="62GV8nSig3$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>

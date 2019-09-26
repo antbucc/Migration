@@ -73,12 +73,17 @@
       <property role="TrG5h" value="Command" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="62GV8nShFAH" role="1TKVEl">
+      <property role="IQ2nx" value="6966202783775504813" />
+      <property role="TrG5h" value="copy" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="1qDekGLZXuM" role="1TKVEi">
       <property role="IQ2ns" value="1632899335022696370" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="microservice" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hbv9:1vRkFORWz7$" resolve="microservice" />
+      <ref role="20lvS9" to="hbv9:1vRkFORWz7$" resolve="Microservice" />
     </node>
   </node>
 </model>

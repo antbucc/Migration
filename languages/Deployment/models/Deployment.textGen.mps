@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="hrda" ref="r:8f31922a-cdc8-4518-9910-4625404b48d9(Deployment.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -99,10 +100,15 @@
             <property role="lacIc" value="COPY " />
           </node>
           <node concept="l9hG8" id="1qDekGM0f1h" role="lcghm">
-            <node concept="2OqwBi" id="1qDekGM0fcW" role="lb14g">
-              <node concept="117lpO" id="1qDekGM0f4C" role="2Oq$k0" />
-              <node concept="3TrEf2" id="1qDekGM0fqW" role="2OqNvi">
-                <ref role="3Tt5mk" to="hrda:1qDekGLZXuM" resolve="microservice" />
+            <node concept="2OqwBi" id="62GV8nSn4sO" role="lb14g">
+              <node concept="2OqwBi" id="1qDekGM0fcW" role="2Oq$k0">
+                <node concept="117lpO" id="1qDekGM0f4C" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1qDekGM0fqW" role="2OqNvi">
+                  <ref role="3Tt5mk" to="hrda:1qDekGLZXuM" resolve="microservice" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="62GV8nSn4Tw" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
