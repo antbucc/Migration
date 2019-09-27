@@ -424,7 +424,7 @@
   </node>
   <node concept="2PqlIr" id="xsPp7zsmbf">
     <property role="TrG5h" value="MicroServiceSearcher" />
-    <property role="39L4OI" value="Finder for Micro Services" />
+    <property role="39L4OI" value="Finder for Microservices" />
     <property role="eK4wv" value="uses all finders of category microservice miner" />
     <ref role="3gKJdq" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2PqlIu" id="xsPp7zsmbg" role="3gKxsI">
@@ -479,7 +479,7 @@
       <node concept="3clFbS" id="xsPp7zsmHC" role="2VODD2">
         <node concept="3clFbF" id="xsPp7zsmRV" role="3cqZAp">
           <node concept="Xl_RD" id="xsPp7zsmRU" role="3clFbG">
-            <property role="Xl_RC" value="micro service miner" />
+            <property role="Xl_RC" value="microservice miner" />
           </node>
         </node>
       </node>

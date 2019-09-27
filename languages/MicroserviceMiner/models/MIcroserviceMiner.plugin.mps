@@ -198,8 +198,8 @@
   </node>
   <node concept="sE7Ow" id="5TuVoB7P0P">
     <property role="TrG5h" value="MicroserviceFinderAction" />
-    <property role="2uzpH1" value="Find Micro Services" />
-    <property role="1WHSii" value="Finds micro services" />
+    <property role="2uzpH1" value="Find Microservices" />
+    <property role="1WHSii" value="Finds microservices" />
     <property role="72QZ$" value="true" />
     <node concept="1DS2jV" id="5GIbYG5xnez" role="1NuT2Z">
       <property role="TrG5h" value="project" />
