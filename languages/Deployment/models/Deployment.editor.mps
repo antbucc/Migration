@@ -40,6 +40,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -123,7 +124,14 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F0A7n" id="62GV8nShFLw" role="3EZMnx">
+        <node concept="3F1sOY" id="3TtbOSVWH9m" role="3EZMnx">
+          <ref role="1NtTu8" to="hrda:1qDekGLZXuM" resolve="microservice" />
+        </node>
+        <node concept="3F0ifn" id="3TtbOSVWLak" role="3EZMnx">
+          <property role="3F0ifm" value=".ol" />
+        </node>
+        <node concept="3F0ifn" id="3TtbOSVVnMe" role="3EZMnx" />
+        <node concept="3F0A7n" id="3TtbOSVVnI5" role="3EZMnx">
           <ref role="1NtTu8" to="hrda:62GV8nShFAH" resolve="copy" />
         </node>
         <node concept="3F0ifn" id="62GV8nShFjS" role="3EZMnx">

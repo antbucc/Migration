@@ -267,5 +267,16 @@
       <ref role="20lvS9" node="1vRkFORWDWP" resolve="Interface" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3TtbOSVWmuj">
+    <property role="EcuMT" value="4493800016245254035" />
+    <property role="TrG5h" value="MicroserviceReference" />
+    <node concept="1TJgyj" id="3TtbOSVWmuk" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4493800016245254036" />
+      <property role="20kJfa" value="microservice" />
+      <ref role="20lvS9" node="1vRkFORWz7$" resolve="Microservice" />
+    </node>
+  </node>
 </model>
 

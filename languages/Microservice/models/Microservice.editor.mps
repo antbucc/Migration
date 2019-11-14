@@ -689,5 +689,17 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3TtbOSVWmul">
+    <ref role="1XX52x" to="hbv9:3TtbOSVWmuj" resolve="MicroserviceReference" />
+    <node concept="1iCGBv" id="3TtbOSVWmum" role="2wV5jI">
+      <ref role="1NtTu8" to="hbv9:3TtbOSVWmuk" resolve="microservice" />
+      <node concept="1sVBvm" id="3TtbOSVWmun" role="1sWHZn">
+        <node concept="3F0A7n" id="3TtbOSVWmuo" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
