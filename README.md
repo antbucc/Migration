@@ -11,7 +11,7 @@ in a bash terminal you can execute the prepared test from the jolie team:
 
 ```
 cd instructions
-docker build --tag hello --file Dockerfile
+docker build --tag hello .
 docker run --detach --name hello-cnt --publish 8000:8000 hello
 jolie client.ol
 ```
