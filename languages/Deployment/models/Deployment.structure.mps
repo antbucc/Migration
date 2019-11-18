@@ -83,7 +83,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="microservice" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="hbv9:1vRkFORWz7$" resolve="Microservice" />
+      <ref role="20lvS9" to="hbv9:3TtbOSVWmuj" resolve="MicroserviceReference" />
     </node>
   </node>
 </model>
