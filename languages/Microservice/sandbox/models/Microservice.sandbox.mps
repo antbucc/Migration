@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="077de623-ba05-47ed-a860-a4445e8de4c1" name="Microservice" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="hbv9" ref="r:28e204df-9d7a-42ae-8326-c233e8a2a717(Microservice.structure)" />
@@ -266,7 +266,6 @@
       <property role="$wDmJ" value="&quot;socket://localhost:8999&quot;" />
       <property role="TrG5h" value="Calculator" />
       <property role="$wDvy" value="sodep" />
-      <ref role="$wCcH" node="1qDekGMQ9zv" resolve="CalculatorInterface" />
     </node>
     <node concept="w1h4X" id="1qDekGMQd4K" role="BtEqU">
       <property role="TrG5h" value="Operation" />
