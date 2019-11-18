@@ -131,9 +131,6 @@
           <property role="3F0ifm" value=".ol" />
         </node>
         <node concept="3F0ifn" id="3TtbOSVVnMe" role="3EZMnx" />
-        <node concept="3F0A7n" id="3TtbOSVVnI5" role="3EZMnx">
-          <ref role="1NtTu8" to="hrda:62GV8nShFAH" resolve="copy" />
-        </node>
         <node concept="3F0ifn" id="62GV8nShFjS" role="3EZMnx">
           <property role="3F0ifm" value="CMD:" />
           <node concept="pVoyu" id="62GV8nShGhM" role="3F10Kt">

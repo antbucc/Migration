@@ -366,5 +366,43 @@
       <ref role="$wCcH" node="1qDekGMBHfO" resolve="OperationServiceInterface" />
     </node>
   </node>
+  <node concept="w1mdp" id="3eZBUaneE68">
+    <property role="TrG5h" value="helloservice" />
+    <property role="w0W6p" value="concurrent" />
+    <node concept="WapmN" id="3eZBUaneE6g" role="$pcK_">
+      <ref role="WapmM" node="3eZBUaneE6c" resolve="HelloInterface" />
+    </node>
+    <node concept="w1myx" id="3eZBUaneE6a" role="BtEkH">
+      <property role="TrG5h" value="Hello" />
+      <property role="$wDmJ" value="&quot;socket://localhost:8000&quot;" />
+      <property role="$wDvy" value="sodep" />
+      <ref role="$wCcH" node="3eZBUaneE6c" resolve="HelloInterface" />
+    </node>
+    <node concept="1PaTwC" id="3eZBUaneE6r" role="$TtTT">
+      <node concept="3oM_SD" id="3eZBUaneE6$" role="1PaTwD">
+        <property role="3oM_SC" value="respose" />
+      </node>
+      <node concept="3oM_SD" id="3eZBUaneE6S" role="1PaTwD">
+        <property role="3oM_SC" value="=" />
+      </node>
+      <node concept="3oM_SD" id="3eZBUaneE6V" role="1PaTwD">
+        <property role="3oM_SC" value="request" />
+      </node>
+    </node>
+  </node>
+  <node concept="w1sQ8" id="3eZBUaneE6c">
+    <property role="TrG5h" value="HelloInterface" />
+    <ref role="w3uIu" node="3eZBUaneE6d" resolve="hello" />
+  </node>
+  <node concept="w0DHm" id="3eZBUaneE6d">
+    <property role="TrG5h" value="hello" />
+    <node concept="w0F9L" id="3eZBUaneE6e" role="w0Cl2">
+      <property role="TrG5h" value="string" />
+      <property role="$JPNk" value="string" />
+    </node>
+    <node concept="w0Ee0" id="3eZBUaneE6f" role="w0FYz">
+      <property role="TrG5h" value="string" />
+    </node>
+  </node>
 </model>
 
