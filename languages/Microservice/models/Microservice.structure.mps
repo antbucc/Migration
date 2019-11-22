@@ -92,7 +92,7 @@
       <property role="IQ2ns" value="1632899335027746610" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="behavior" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
     </node>
   </node>
@@ -134,6 +134,11 @@
     <node concept="1TJgyi" id="1qDekGMaWvz" role="1TKVEl">
       <property role="IQ2nx" value="1632899335025575907" />
       <property role="TrG5h" value="Protocol" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="17z$LoBco4q" role="1TKVEl">
+      <property role="IQ2nx" value="1289035641714213146" />
+      <property role="TrG5h" value="Location" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="1qDekGMaX2P" role="1TKVEi">
@@ -265,6 +270,9 @@
       <property role="IQ2ns" value="3408496264158182649" />
       <property role="20kJfa" value="interface" />
       <ref role="20lvS9" node="1vRkFORWDWP" resolve="Interface" />
+    </node>
+    <node concept="PrWs8" id="17z$LoBpRk$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TtbOSVWmuj">
