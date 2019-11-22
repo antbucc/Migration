@@ -100,6 +100,7 @@
         <reference id="1233670257997" name="conceptDeclaration" index="WuzLi" />
         <child id="1233749296504" name="textGenBlock" index="11c4hB" />
         <child id="7991274449437422201" name="extension" index="33IsuW" />
+        <child id="7844911294523354450" name="filePath" index="1Knhgg" />
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
@@ -108,6 +109,7 @@
       <concept id="1236188139846" name="jetbrains.mps.lang.textGen.structure.WithIndentOperation" flags="nn" index="3izx1p">
         <child id="1236188238861" name="list" index="3izTki" />
       </concept>
+      <concept id="7844911294523361055" name="jetbrains.mps.lang.textGen.structure.FilePathQuery" flags="ig" index="1KnnTt" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -514,6 +516,15 @@
             <property role="lacIc" value="}" />
           </node>
           <node concept="l8MVK" id="2tMi6m$QU7X" role="lcghm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1KnnTt" id="2QKGPd9vqFL" role="1Knhgg">
+      <node concept="3clFbS" id="2QKGPd9vqFM" role="2VODD2">
+        <node concept="3clFbF" id="2QKGPd9vr3X" role="3cqZAp">
+          <node concept="Xl_RD" id="45ZuLUMt6ZS" role="3clFbG">
+            <property role="Xl_RC" value="languages/Deployment/sandbox/classes_gen/Deployment/sandbox" />
+          </node>
         </node>
       </node>
     </node>
