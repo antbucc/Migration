@@ -1617,7 +1617,7 @@
     </node>
     <node concept="1DS2jV" id="4cs6MYubZbu" role="1NuT2Z">
       <property role="TrG5h" value="module" />
-      <ref role="1DUlNI" to="qkt:~LangDataKeys.MODULE_CONTEXT" resolve="MODULE_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODULE" resolve="CONTEXT_MODULE" />
       <node concept="1oajcY" id="4cs6MYubZbv" role="1oa70y" />
     </node>
     <node concept="tnohg" id="1YKPe_kjSfc" role="tncku">
@@ -3066,7 +3066,7 @@
     </node>
     <node concept="1DS2jV" id="76RT0J5k0eX" role="1NuT2Z">
       <property role="TrG5h" value="module" />
-      <ref role="1DUlNI" to="qkt:~LangDataKeys.MODULE_CONTEXT" resolve="MODULE_CONTEXT" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODULE" resolve="CONTEXT_MODULE" />
       <node concept="1oajcY" id="76RT0J5k0eY" role="1oa70y" />
     </node>
   </node>
