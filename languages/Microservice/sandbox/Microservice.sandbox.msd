@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Microservice.sandbox" uuid="17380325-6def-4c12-a3b3-a42c64a716db" moduleVersion="0" compileInMPS="true" generatorOutputPath="/Users/amministratore/MPSProjects/Migration/Output">
+<solution name="Microservice.sandbox" uuid="17380325-6def-4c12-a3b3-a42c64a716db" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

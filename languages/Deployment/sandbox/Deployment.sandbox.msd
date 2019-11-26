@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Deployment.sandbox" uuid="a57af45e-d1d6-429e-9405-ffd63c664c8e" moduleVersion="0" compileInMPS="true" generatorOutputPath="/Users/amministratore/MPSProjects/Migration/Output">
+<solution name="Deployment.sandbox" uuid="a57af45e-d1d6-429e-9405-ffd63c664c8e" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
