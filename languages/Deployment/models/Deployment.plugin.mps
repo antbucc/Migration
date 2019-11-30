@@ -1655,7 +1655,7 @@
                 <property role="TrG5h" value="cmd" />
                 <node concept="17QB3L" id="76RT0J5k3kz" role="1tU5fm" />
                 <node concept="Xl_RD" id="45ZuLUMp9FD" role="33vP2m">
-                  <property role="Xl_RC" value="docker build --tag hello ." />
+                  <property role="Xl_RC" value="sh -c docker build --tag hello ." />
                 </node>
               </node>
             </node>
@@ -1694,6 +1694,17 @@
                 </node>
               </node>
             </node>
+            <node concept="2xdQw9" id="7uwPnqixodd" role="3cqZAp">
+              <property role="2xdLsb" value="info" />
+              <node concept="3cpWs3" id="7uwPnqixoGH" role="9lYJi">
+                <node concept="37vLTw" id="7uwPnqixoH1" role="3uHU7w">
+                  <ref role="3cqZAo" node="4cs6MYuca0t" resolve="dir" />
+                </node>
+                <node concept="Xl_RD" id="7uwPnqixodf" role="3uHU7B">
+                  <property role="Xl_RC" value="dir: " />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="45ZuLUMt3cM" role="3cqZAp">
               <node concept="3cpWsn" id="45ZuLUMt3cN" role="3cpWs9">
                 <property role="TrG5h" value="p" />
@@ -1706,20 +1717,22 @@
                     <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
                   </node>
                   <node concept="liA8E" id="45ZuLUMt4dg" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Runtime.exec(java.lang.String,java.lang.String[],java.io.File)" resolve="exec" />
-                    <node concept="37vLTw" id="45ZuLUMtTp0" role="37wK5m">
-                      <ref role="3cqZAo" node="45ZuLUMp9y8" resolve="cmd" />
-                    </node>
-                    <node concept="10Nm6u" id="45ZuLUMt4x6" role="37wK5m" />
-                    <node concept="37vLTw" id="4cs6MYuca0x" role="37wK5m">
-                      <ref role="3cqZAo" node="4cs6MYuca0t" resolve="dir" />
+                    <ref role="37wK5l" to="wyt6:~Runtime.exec(java.lang.String)" resolve="exec" />
+                    <node concept="2YIFZM" id="7uwPnqisfYL" role="37wK5m">
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                      <node concept="Xl_RD" id="7uwPnqisgdD" role="37wK5m">
+                        <property role="Xl_RC" value="sh -c ls . %s" />
+                      </node>
+                      <node concept="37vLTw" id="7uwPnqixoO$" role="37wK5m">
+                        <ref role="3cqZAo" node="4cs6MYuca0t" resolve="dir" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3clFbH" id="45ZuLUMt7nV" role="3cqZAp" />
-            <node concept="3clFbH" id="45ZuLUMqqYo" role="3cqZAp" />
             <node concept="3cpWs8" id="45ZuLUMm4WK" role="3cqZAp">
               <node concept="3cpWsn" id="45ZuLUMm4WL" role="3cpWs9">
                 <property role="TrG5h" value="stdInput" />
@@ -1857,16 +1870,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="45ZuLUMrxwN" role="3cqZAp" />
-            <node concept="1X3_iC" id="45ZuLUMmzkx" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="2xdQw9" id="45ZuLUMkLYk" role="8Wnug">
-                <property role="2xdLsb" value="debug" />
-                <node concept="Xl_RD" id="45ZuLUMkLYm" role="9lYJi">
-                  <property role="Xl_RC" value="arrivo qui comando" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="45ZuLUMls6M" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="45ZuLUMjxLb" role="TEbGg">
